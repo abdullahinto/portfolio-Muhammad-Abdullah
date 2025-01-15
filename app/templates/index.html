@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Muhammad Abdullah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="static/css/about.css">
+    <link rel="stylesheet" href="static/css/skills.css">
+    <link rel="stylesheet" href="static/css/projects.css">
+    <link rel="stylesheet" href="static/css/resume.css">
+    <link rel="stylesheet" href="static/css/contact.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div><a href="#home">Home</a></div>
+        <div><a href="#skills">Skills</a></div>
+        <div><a href="#projects">Projects</a></div>
+        <div><a href="#resume">Resume</a></div>
+        <div><a href="#contact">Contact</a></div>
+    </nav>
+
+    <section class="ABOUT-section" , id="home">
+        <img class="IMG" src="static/assets/dp.png" alt="Muhammad Abdullah">
+
+        <div class="main-content">
+            <h1 class="main-heading">Hello, World! <br> It's Muhammad Abdullah</h1>
+            <span class="sub-heading">A Junior Python Developer</span>
+            <p class="paragraph">
+                A Junior Python Developer passionate about solving problems and building seamless web apps. I specialize
+                in
+                backend logic, RESTful APIs, and Flask, with a solid grip on SQL and NoSQL databases.
+            </p>
+        </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+        <div class="skills-title">
+            My Developer Toolkit
+        </div>
+        <div class="skills-container">
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="static/assets/python.png" alt="Python">
+                    <p>Versatile language for diverse applications</p>
+                </div>
+                <div class="skill-item">
+                    <img src="static/assets/postman.png" alt="Postman">
+                    <p>For API development, testing, and documentation</p>
+                </div>
+
+                <div class="skill-item">
+                    <img src="static/assets/vscode.png" alt="vscode">
+                    <p>Versatile code editor by Microsoft.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="static/assets/github.png" alt="github">
+                    <p>Web-based platform for version control.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="static/assets/git.png" alt="git">
+                    <p>Distributed version control system.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="static/assets/flask.png" alt="flask">
+                    <p>Lightweight web framework for Python.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="static/assets/sqla.png" alt="sqlalchemy">
+                    <p>SQL toolkit and ORM library for Python.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="static/assets/figma.png" alt="figma">
+                    <p>Collaborative design tool for UI/UX.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="static/assets/gpt.png" alt="gpt">
+                    <p>AI model for conversational responses.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="static/assets/jinja.png" alt="jinja2">
+                    <p>Templating engine for creating dynamic web pages.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="static/assets/css.png" alt="css">
+                    <p>Style sheet language for web page presentation.</p>
+                </div>
+                <div class="skill-item">
+                    <img src="static/assets/html.png" alt="html">
+                    <p>Markup language for creating web pages.</p>
+                </div>
+                <!-- ... other skill items ... -->
+            </div>
+        </div>
+        <div class="background-circles">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-4"></div>
+        </div>
+    </section>
+
+    <section class="projects-section" , id="projects">
+        <h1 class="main-heading">Projects That Define Me</h1>
+        <div class="box">
+            <!-- Left Arrow with the new class -->
+            <button class="carousel-arrow arrow-left" id="prev-button">
+                <span>&lt;</span>
+            </button>
+
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <div class="overlap-group">
+                        <div class="project-title">TEFI Flask App</div>
+                        <div class="project-description">
+                            A Flask web app that extracts text from uploaded images using OCR technology, enabling users
+                            to upload images and view extracted text instantly. </div>
+                        <div class="tech-stack">Tech Stack: Flask, Python, OCR (Optical Character Recognition), JSON.
+                        </div>
+                        <a href="https://github.com/abdullahinto/TFEI-Flask-App" target="_blank"
+                            class="github-button">GITHUB</a>
+                    </div>
+                    <div class="overlap-group">
+                        <div class="project-title">Flask CRUD API</div>
+                        <div class="project-description">
+                            RESTful API with Flask offering CRUD operations, JSON responses, and robust error handling.
+                            Features input validation and optional MongoDB integration. Built for efficient data
+                            management with clear endpoints. </div>
+                        <div class="tech-stack">Tech Stack: Flask, Python, MongoDB (optional), Pymongo, JSON</div>
+                        <a href="https://github.com/abdullahinto/producta_api" target="_blank"
+                            class="github-button">GITHUB</a>
+                    </div>
+                    <div class="overlap-group">
+                        <div class="project-title">Feedback CRUD App</div>
+                        <div class="project-description">
+                            A simple web application for creating, reading, updating, and deleting records with a
+                            user-friendly interface. </div>
+                        <div class="tech-stack">Tech Stack: Flask, Python, SQLite, HTML, CSS, JavaScript.
+                        </div>
+                        <a href="https://github.com/abdullahinto/Feedback_CRUD" target="_blank"
+                            class="github-button">GITHUB</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Arrow with the new class -->
+            <button class="carousel-arrow arrow-right triangle tirangle-right" id="next-button">
+                <span>&gt;</span>
+            </button>
+        </div>
+    </section>
+
+
+    <section class="resume-section" , id="resume">
+        <h1>See My Resume</h1>
+        <p>Want to learn more about my experience and skills? Download my resume for a detailed overview.</p>
+        <a href="https://drive.google.com/file/d/1sz5C7dQzHLh90eWifTq875UF0DTTNL-k/view" target="_blank"
+            class="download-button">DOWNLOAD</a>
+    </section>
+
+
+    <section class="contact-section" , id="contact">
+        <div class="contact-text">
+            <h1>Reach Out to Me</h1>
+            <p>Looking for a Python developer for your team???</p>
+            <p>Let's chat! Reach out via the form or email me at: printabdullah285@gmail.com.</p>
+        </div>
+        <div class="contact-form">
+            <form method="POST" action="/submit">
+                <div class="form-group">
+                    <input type="text" placeholder="NAME" name="name">
+                    <input type="email" placeholder="E-MAIL" name="email">
+                </div>
+                <div class="form-group message">
+                    <textarea placeholder="MESSAGE" name="message"></textarea>
+                </div>
+                <button class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const carousel = document.querySelector(".carousel");
+            const projects = document.querySelectorAll(".overlap-group");
+            const prevButton = document.getElementById("prev-button");
+            const nextButton = document.getElementById("next-button");
+
+            let currentIndex = 0;
+            const projectCount = projects.length;
+
+            function updateCarousel() {
+                const offset = -currentIndex * 100; // Calculate the offset based on the index
+                carousel.style.transform = `translateX(${offset}%)`;
+            }
+
+            function showProject(index) {
+                currentIndex = index; // Update the index
+                if (currentIndex < 0) {
+                    currentIndex = projectCount - 1; // Loop back to the last project
+                } else if (currentIndex >= projectCount) {
+                    currentIndex = 0; // Loop back to the first project
+                }
+                updateCarousel(); // Update the carousel position
+            }
+
+            prevButton.addEventListener("click", () => {
+                showProject(currentIndex - 1); // Go to the previous project
+            });
+
+            nextButton.addEventListener("click", () => {
+                showProject(currentIndex + 1); // Go to the next project
+            });
+
+            // Ensure the carousel starts at the correct position
+            updateCarousel();
+        });
+    </script>
+
+</body>
+
+<footer
+    style="background-color: #1a1a1a; margin-top:80px; color: white; padding: 30px 0; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+        <div style="margin-bottom: 20px;">
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank"
+                style="margin: 0 15px; color: white; text-decoration: none; font-size: 18px;">LinkedIn</a>
+            <a href="https://github.com/abdullahinto" target="_blank"
+                style="margin: 0 15px; color: white; text-decoration: none; font-size: 18px;">GitHub</a>
+            <a href="https://www.instagram.com/yourprofile" target="_blank"
+                style="margin: 0 15px; color: white; text-decoration: none; font-size: 18px;">Instagram</a>
+        </div>
+        <div style="font-size: 14px; margin-bottom: 20px;">
+            <p>&copy; 2025 Muhammad Abdullah. All rights reserved.</p>
+        </div>
+        <div style="font-size: 16px; color: #b0b0b0;">
+            <p>Made with <span style="color: red;">&#9829;</span> by Muhammad Abdullah</p>
+        </div>
+    </div>
+</footer>
+
+</html>

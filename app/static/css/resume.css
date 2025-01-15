@@ -1,0 +1,63 @@
+/* body {
+      margin: 0;
+      font-family: 'Itim', cursive;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+ */
+    .resume-section {
+      text-align: center;
+      margin-top: 100px;  
+       
+    }
+
+    .resume-section h1 {
+      font-size: 50px;
+      width: 533px;
+      height: 67px;
+      margin: 0 auto 2rem;
+      text-shadow: 2px 2px 4px #000000;
+
+      
+    }
+
+    .resume-section p {
+      font-size: 30px;
+      width: 628px;
+      height: 120px;
+      margin: 0 auto 2rem;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
+
+   
+     
+    }
+
+    .resume-section .download-button {
+      display: inline-block;
+      background-color: #0189FF;
+      color: #fff;
+      font-size: 25px;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      width: 158px;
+      height: 42px;
+      line-height: 40px;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      text-align: center;
+    }
+
+    .resume-section .download-button:hover {
+      background-color: #0056b3;
+      transform: translateY(-3px);
+    }
+
+    .resume-section .download-button:active {
+      transform: translateY(0);
+    }

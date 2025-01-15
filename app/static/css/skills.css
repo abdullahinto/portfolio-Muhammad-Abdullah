@@ -1,0 +1,233 @@
+/* Global Styles */
+body {
+  font-family: 'Itim', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.skills-section {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 20px;
+  max-width: 1200px; /* Matches the width of the navbar */
+  margin: 0 auto; /* Centers the section */
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+  color: #fff;
+ 
+}
+
+.skills-container {
+  position: relative;
+  backdrop-filter: blur(10px) saturate(120%);
+  -webkit-backdrop-filter: blur(10px) saturate(120%);
+  background-color: rgba(255, 255, 255, 0.4); /* Slightly whiter for better contrast */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  padding: 40px;
+  z-index: 2; /* Ensure container is above circles */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4); /* Adds depth */
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.skill-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.skill-item p {
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+/* Background Circles */
+.background-circles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure circles are behind the container */
+  pointer-events: none;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%; /* Ensures circles are perfectly rounded */
+  opacity: 0.7;
+  z-index: 0; /* Place circles fully behind the container */
+}
+
+.circle-1 {
+  width: 600px;
+  height: 600px;
+  background-color: #f28c8c;
+  top: 20px;
+  left: -150px; /* Fully within the navbar width */
+}
+
+.circle-2 {
+  width: 300px;
+  height: 300px;
+  background-color: #f24040;
+  top: 20px;
+  right: -150px; /* Fully within the navbar width */
+}
+
+.circle-3 {
+  width: 600px;
+  height: 600px;
+  background-color: #2a5d8c;
+  bottom: -150px;
+  right: -100px; /* Adjusted for alignment */
+}
+
+.circle-4 {
+  width: 300px;
+  height: 300px;
+  background-color: #f3a547;
+  bottom: -150px;
+  left: -100px; /* Adjusted for alignment */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .circle-1,
+  .circle-2,
+  .circle-3,
+  .circle-4 {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-title {
+    font-size: 36px;
+  }
+
+  .circle-1,
+  .circle-2,
+  .circle-3,
+  .circle-4 {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+
+
+/* Add animation to the circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.8;
+  z-index: 0; /* Place circles fully behind the container */
+  transform: scale(0.8); /* Start slightly smaller */
+  animation: circleFloat 5s ease-in-out infinite, circleFadeIn 2s ease-in forwards;
+}
+
+@keyframes circleFloat {
+  0%, 100% {
+    transform: scale(0.8) translateY(0);
+  }
+  50% {
+    transform: scale(1) translateY(-20px); /* Float up slightly */
+  }
+}
+
+@keyframes circleFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6); /* Start from smaller size */
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(0.8); /* Transition to the original size */
+  }
+}
+
+/* Scroll Animation */
+@keyframes circleScroll {
+  0% {
+    transform: translateY(50px); /* Move down initially */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* Set to original position */
+    opacity: 1;
+  }
+}
+
+.circle {
+  will-change: transform, opacity;
+}
+
+.circle-1,
+.circle-2,
+.circle-3,
+.circle-4 {
+  animation: circleFloat 5s ease-in-out infinite, circleFadeIn 2s ease-in forwards;
+}
+
+
+
+/* Keyframes for New Scroll Animation */
+@keyframes circleNewScrollEffect {
+  0% {
+    transform: scale(0.8) rotate(0deg); /* Start smaller and unrotated */
+    opacity: 0; /* Invisible */
+  }
+  50% {
+    transform: scale(1.2) rotate(180deg); /* Grow larger and rotate halfway */
+    opacity: 0.8; /* Slightly visible */
+  }
+  100% {
+    transform: scale(1) rotate(360deg); /* Reset size and complete rotation */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+/* Default Circle Styles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: all 0.5s ease; /* Smooth transitions */
+}
+
+/* Scroll Animation Trigger */
+.circle.scrolled {
+  animation: circleNewScrollEffect 2s ease-out forwards; /* Apply new animation */
+}
