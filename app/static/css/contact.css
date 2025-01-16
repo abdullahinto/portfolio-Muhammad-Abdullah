@@ -16,13 +16,13 @@
 }
 
 .contact-text h1 {
-  font-size: 40px; /* Reduced size for better responsiveness */
+  font-size: 45px; /* Reduced size for better responsiveness */
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .contact-text p {
-  font-size: 22px; /* Adjusted for readability */
+  font-size: 32px; /* Adjusted for readability */
   margin-bottom: 1.5rem;
   line-height: 1.5;
 }
