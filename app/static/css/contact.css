@@ -1,127 +1,163 @@
-    /* body {
-      margin: 0;
-      font-family: 'Itim', cursive;
-      background-color: #000;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
- */
-    .contact-section {
-      display: flex;
-      align-items: flex-start;
-      gap: 6rem;
-      margin-top:150px;
+.contact-section {
+  display: flex;
+  flex-wrap: wrap; /* Ensure the layout adjusts on smaller screens */
+  align-items: flex-start;
+  gap: 2rem; /* Reduced gap for better spacing on smaller screens */
+  margin-top: 150px;
+  padding: 0 20px; /* Add padding for better alignment */
+  justify-content: center; /* Center align content for smaller screens */
+}
 
-      
-  
-    }
+.contact-text {
+  max-width: 520px;
+  z-index: 2;
+  text-shadow: 2px 2px 4px #000000;
+  text-align: center; /* Align text centrally for smaller screens */
+}
 
-    .contact-text {
-      max-width: 520px;
-      margin-left:50px;
-      z-index:2;  
-      text-shadow: 2px 2px 4px #000000;
+.contact-text h1 {
+  font-size: 40px; /* Reduced size for better responsiveness */
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
 
-      
-    }
+.contact-text p {
+  font-size: 22px; /* Adjusted for readability */
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
 
-    .contact-text h1 {
-      font-size: 50px;
-      margin-bottom: 1rem;
-      
-      
-    }
+.contact-form {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: auto; /* Adjust height dynamically based on content */
+  background: url('submit.jpg') no-repeat center center/cover;
+  border-radius: 30px;
+  padding: 2rem;
+  box-sizing: border-box;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
 
-    .contact-text p {
-      font-size: 35px;
-      margin-bottom: 1.5rem;
-      
-    }
+.form-group {
+  display: flex;
+  flex-wrap: wrap; /* Ensure inputs stack on smaller screens */
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
 
-    .contact-form {
-      position: relative;
-      width: 600px;
-      height: 412px;
-      background: url('submit.jpg') no-repeat center center/cover;
-      border-radius: 30px;
-      padding: 3rem;
-      box-sizing: border-box;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4); /* Adds depth */
-	margin-right:10px;
-      z-index:2;  
-  
-    }
+.form-group input {
+  flex: 1;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  padding: 0 1rem;
+  font-size: 18px; /* Adjust font size for smaller screens */
+  background-color: rgba(36, 137, 238, 0.8);
+  color: #fff;
+  outline: none;
+  width: 100%; /* Full width for smaller screens */
+  font-family: 'Itim', cursive;
+}
 
-    .form-group {
-      display: flex;
-      gap: 1rem;
-      margin-bottom: 0.5rem;
-    }
+.form-group input::placeholder {
+  color: #fff;
+}
 
-    .form-group input {
-      flex: 1;
-      height: 68px;
-      border-radius: 30px;
-      border: none;
-      padding: 0 1rem;
-      font-size: 25px;
-      background-color: rgba(36, 137, 238, 0.8);
-      color: #fff;
-      outline: none;
-      width:100px;  
-    }
+.form-group.message {
+  flex-direction: column;
+  width: 92%; /* Full width for smaller screens */
+}
 
-    .form-group input::placeholder {
-      color: #fff;
-    }
+.form-group.message textarea {
+  width: 100%;
+  height: 150px; /* Adjusted height for better proportions */
+  border-radius: 30px;
+  border: none;
+  padding: 1rem;
+  font-size: 18px;
+  background-color: rgba(36, 137, 238, 0.8);
+  color: #fff;
+  outline: none;
+  resize: none;
+  font-family: 'Itim', cursive;
+}
 
-    .form-group.message {
+.form-group.message textarea::placeholder {
+  color: #fff;
+}
+
+.submit-button {
+  width: 160px; /* Slightly larger button */
+  height: 50px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #012bff;
+  color: #fff;
+  font-size: 18px; /* Adjusted font size */
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 1rem auto 0; /* Center button on smaller screens */
+  display: block; /* Ensure block-level element */
+  font-family: 'Itim', cursive;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-section {
       flex-direction: column;
-      width:400px;  
-  
-    }
+      align-items: center;
+  }
 
-    .form-group.message textarea {
-      width: 100%;
-      height: 194px;
-      border-radius: 30px;
-      border: none;
-      padding: 1rem;
-      font-size: 25px;
-      background-color: rgba(36, 137, 238, 0.8);
-      color: #fff;
-      outline: none;
-      resize: none;
-    }
+  .contact-text h1 {
+      font-size: 32px;
+  }
 
-    .form-group.message textarea::placeholder {
-      color: #fff;
-    }
+  .contact-text p {
+      font-size: 18px;
+  }
 
-    .submit-button {
-      width: 130px;
-      height: 42px;
-      line-height: 42px;
-      text-align: center;
-      background-color: #0189FF;
-      color: #fff;
-      font-size: 20px;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-      margin-left:35%; 
-      margin-bottom:10px;  
-    }
+  .contact-form {
+      padding: 2rem;
+  }
 
-    .submit-button:hover {
-      background-color: #0056b3;
-      transform: translateY(-3px);
-    }
+  .form-group input,
+  .form-group.message textarea {
+      font-size: 16px;
 
-    .submit-button:active {
-      transform: translateY(0);
-    }
+  }
+
+  .submit-button {
+      width: 120px;
+      height: 40px;
+      font-size: 16px;
+      
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-text h1 {
+      font-size: 28px;
+  }
+
+  .contact-text p {
+      font-size: 16px;
+  }
+
+  .submit-button {
+      width: 120px;
+      height: 40px;
+      font-size: 14px;
+  }
+}
