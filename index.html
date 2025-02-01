@@ -181,19 +181,20 @@
             <p>Looking for a Python developer for your team???</p>
             <p>Let's chat! Reach out via the form or email me at: printabdullah285@gmail.com.</p>
         </div>
-        <div class="contact-form">
-            <form method="POST" data-netlify="true">
-                <div class="form-group">
-                    <input type="text" placeholder="NAME" name="name" required>
-                    <input type="email" placeholder="E-MAIL" name="email" required>
-                </div>
-                <div class="form-group message">
-                    <textarea placeholder="MESSAGE" name="message" required></textarea>
-                </div>
-                <button class="submit-button">Submit</button>
-            </form>
-
+     <div class="contact-form">
+    <form method="POST" data-netlify="true" netlify-honeypot="bot-field" name="contact">
+        <input type="hidden" name="form-name" value="contact">
+        <div class="form-group">
+            <input type="text" placeholder="NAME" name="name" required>
+            <input type="email" placeholder="E-MAIL" name="email" required>
         </div>
+        <div class="form-group message">
+            <textarea placeholder="MESSAGE" name="message" required></textarea>
+        </div>
+        <button class="submit-button">Submit</button>
+    </form>
+</div>
+
     </section>
 
 
