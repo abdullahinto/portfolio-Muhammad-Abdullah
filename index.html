@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Muhammad Abdullah</title>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="globals.css">
-    <link rel="stylesheet" href="static/css/about.css">
-    <link rel="stylesheet" href="static/css/skills.css">
-    <link rel="stylesheet" href="static/css/projects.css">
-    <link rel="stylesheet" href="static/css/resume.css">
-    <link rel="stylesheet" href="static/css/contact.css">
+    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+
 
     <style>
         html {
@@ -30,8 +32,8 @@
         <div><a href="#contact">Contact</a></div>
     </nav>
 
-    <section class="ABOUT-section" , id="home">
-        <img class="IMG" src="static/assets/dp.png" alt="Muhammad Abdullah">
+    <section class="ABOUT-section" id="home">
+        <img class="IMG" src="assets/dp.png" alt="Muhammad Abdullah">
 
         <div class="main-content">
             <h1 class="main-heading">Hello, World! <br> It's Muhammad Abdullah</h1>
@@ -44,62 +46,60 @@
         </div>
     </section>
 
+
+
     <section class="skills-section" id="skills">
-        <div class="skills-title">
-            My Developer Toolkit
-        </div>
+        <div class="skills-title">My Developer Toolkit</div>
         <div class="skills-container">
             <div class="skills-grid">
                 <div class="skill-item">
-                    <img src="static/assets/python.png" alt="Python">
+                    <img src="assets/python.png" alt="Python">
                     <p>Versatile language for diverse applications</p>
                 </div>
                 <div class="skill-item">
-                    <img src="static/assets/postman.png" alt="Postman">
+                    <img src="assets/postman.png" alt="Postman">
                     <p>For API development, testing, and documentation</p>
                 </div>
-
                 <div class="skill-item">
-                    <img src="static/assets/vscode.png" alt="vscode">
+                    <img src="assets/vscode.png" alt="vscode">
                     <p>Versatile code editor by Microsoft.</p>
                 </div>
                 <div class="skill-item">
-                    <img src="static/assets/github.png" alt="github">
+                    <img src="assets/github.png" alt="github">
                     <p>Web-based platform for version control.</p>
                 </div>
                 <div class="skill-item">
-                    <img src="static/assets/git.png" alt="git">
+                    <img src="assets/git.png" alt="git">
                     <p>Distributed version control system.</p>
                 </div>
                 <div class="skill-item">
-                    <img src="static/assets/flask.png" alt="flask">
+                    <img src="assets/flask.png" alt="flask">
                     <p>Lightweight web framework for Python.</p>
                 </div>
                 <div class="skill-item">
-                    <img src="static/assets/sqla.png" alt="sqlalchemy">
+                    <img src="assets/sqla.png" alt="sqlalchemy">
                     <p>SQL toolkit and ORM library for Python.</p>
                 </div>
                 <div class="skill-item">
-                    <img src="static/assets/figma.png" alt="figma">
+                    <img src="assets/figma.png" alt="figma">
                     <p>Collaborative design tool for UI/UX.</p>
                 </div>
                 <div class="skill-item">
-                    <img src="static/assets/gpt.png" alt="gpt">
+                    <img src="assets/gpt.png" alt="gpt">
                     <p>AI model for conversational responses.</p>
                 </div>
                 <div class="skill-item">
-                    <img src="static/assets/jinja.png" alt="jinja2">
+                    <img src="assets/jinja.png" alt="jinja2">
                     <p>Templating engine for creating dynamic web pages.</p>
                 </div>
                 <div class="skill-item">
-                    <img src="static/assets/css.png" alt="css">
+                    <img src="assets/css.png" alt="css">
                     <p>Style sheet language for web page presentation.</p>
                 </div>
                 <div class="skill-item">
-                    <img src="static/assets/html.png" alt="html">
+                    <img src="assets/html.png" alt="html">
                     <p>Markup language for creating web pages.</p>
                 </div>
-                <!-- ... other skill items ... -->
             </div>
         </div>
         <div class="background-circles">
@@ -110,7 +110,8 @@
         </div>
     </section>
 
-    <section class="projects-section" , id="projects">
+
+    <section class="projects-section" id="projects">
         <h1 class="main-heading">Projects That Define Me</h1>
         <div class="box">
             <!-- Left Arrow with the new class -->
@@ -120,31 +121,34 @@
 
             <div class="carousel-container">
                 <div class="carousel" id="carousel">
-                    <div class="overlap-group">
+                    <div class="overlap-group project-item">
                         <div class="project-title">TEFI Flask App</div>
                         <div class="project-description">
                             A Flask web app that extracts text from uploaded images using OCR technology, enabling users
-                            to upload images and view extracted text instantly. </div>
+                            to upload images and view extracted text instantly.
+                        </div>
                         <div class="tech-stack">Tech Stack: Flask, Python, OCR (Optical Character Recognition), JSON.
                         </div>
                         <a href="https://github.com/abdullahinto/TFEI-Flask-App" target="_blank"
                             class="github-button">GITHUB</a>
                     </div>
-                    <div class="overlap-group">
+                    <div class="overlap-group project-item">
                         <div class="project-title">Flask CRUD API</div>
                         <div class="project-description">
                             RESTful API with Flask offering CRUD operations, JSON responses, and robust error handling.
                             Features input validation and optional MongoDB integration. Built for efficient data
-                            management with clear endpoints. </div>
+                            management with clear endpoints.
+                        </div>
                         <div class="tech-stack">Tech Stack: Flask, Python, MongoDB (optional), Pymongo, JSON</div>
                         <a href="https://github.com/abdullahinto/producta_api" target="_blank"
                             class="github-button">GITHUB</a>
                     </div>
-                    <div class="overlap-group">
+                    <div class="overlap-group project-item">
                         <div class="project-title">Feedback CRUD App</div>
                         <div class="project-description">
                             A simple web application for creating, reading, updating, and deleting records with a
-                            user-friendly interface. </div>
+                            user-friendly interface.
+                        </div>
                         <div class="tech-stack">Tech Stack: Flask, Python, SQLite, HTML, CSS, JavaScript.
                         </div>
                         <a href="https://github.com/abdullahinto/Feedback_CRUD" target="_blank"
@@ -161,7 +165,8 @@
     </section>
 
 
-    <section class="resume-section" , id="resume">
+
+    <section class="resume-section" id="resume">
         <h1>See My Resume</h1>
         <p>Want to learn more about my experience and skills? Download my resume for a detailed overview.</p>
         <a href="https://drive.google.com/file/d/1X3-Fp0La8aOJBA6mesmRwpMMqiflJskj/view?usp=drive_link" target="_blank"
@@ -169,14 +174,15 @@
     </section>
 
 
-    <section class="contact-section" , id="contact">
+
+    <section class="contact-section" id="contact">
         <div class="contact-text">
             <h1>Reach Out to Me</h1>
             <p>Looking for a Python developer for your team???</p>
             <p>Let's chat! Reach out via the form or email me at: printabdullah285@gmail.com.</p>
         </div>
         <div class="contact-form">
-            <form  action="#home">
+            <form action="#home">
                 <div class="form-group">
                     <input type="text" placeholder="NAME" name="name">
                     <input type="email" placeholder="E-MAIL" name="email">
@@ -188,6 +194,7 @@
             </form>
         </div>
     </section>
+
 
 
 
@@ -228,6 +235,81 @@
             // Ensure the carousel starts at the correct position
             updateCarousel();
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            document.querySelectorAll(".IMG, .main-heading, .sub-heading, .paragraph").forEach(element => {
+                observer.observe(element);
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            document.querySelectorAll(".skill-item").forEach(element => {
+                observer.observe(element);
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observerCallback = (entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    } else {
+                        entry.target.classList.remove("visible");
+                    }
+                });
+            };
+
+            const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+            document.querySelectorAll(".contact-text, .contact-form").forEach(element => {
+                observer.observe(element);
+            });
+
+            // Add shake animation on button click
+            const submitButton = document.querySelector(".submit-button");
+            submitButton.addEventListener("click", () => {
+                submitButton.classList.add("shake");
+                setTimeout(() => {
+                    submitButton.classList.remove("shake");
+                }, 500);
+            });
+        });
+
+
     </script>
 
 </body>
@@ -235,14 +317,13 @@
 <footer
     style="background-color: #1a1a1a; margin-top:80px; color: white; padding: 30px 0; font-family: Arial, sans-serif;">
     <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
-        <div style="margin-bottom: 20px;">
-            <a href="https://www.linkedin.com/in/muhammad-abdullah-3b9a3a318/" target="_blank"
-                style="margin: 0 15px; color: white; text-decoration: none; font-size: 18px;">LinkedIn</a>
-            <a href="https://github.com/abdullahinto" target="_blank"
-                style="margin: 0 15px; color: white; text-decoration: none; font-size: 18px;">GitHub</a>
-            <a href="https://www.instagram.com/yourprofile" target="_blank"
-                style="margin: 0 15px; color: white; text-decoration: none; font-size: 18px;">Instagram</a>
-        </div>
+        <div style="margin-bottom: 20px;"> <a href="https://www.linkedin.com/in/muhammad-abdullah-3b9a3a318/"
+                target="_blank"
+                style="margin: 0 15px; color: white; text-decoration: none; font-size: 18px;">LinkedIn</a> <a
+                href="https://github.com/abdullahinto" target="_blank"
+                style="margin: 0 15px; color: white; text-decoration: none; font-size: 18px;">GitHub</a> <a
+                href="https://www.instagram.com/yourprofile" target="_blank"
+                style="margin: 0 15px; color: white; text-decoration: none; font-size: 18px;">Instagram</a> </div>
         <div style="font-size: 14px; margin-bottom: 20px;">
             <p>&copy; 2025 Muhammad Abdullah. All rights reserved.</p>
         </div>
@@ -251,5 +332,6 @@
         </div>
     </div>
 </footer>
+
 
 </html>

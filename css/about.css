@@ -1,0 +1,99 @@
+body {
+    font-family: 'Itim', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.90);
+    border-radius: 50px;
+    padding: 10px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    z-index: 1000;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.navbar div {
+    font-size: 1.5rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.navbar div a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.ABOUT-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 120px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.IMG {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.main-content {
+    text-align: center;
+    max-width: 60%;
+}
+
+.main-heading, .sub-heading, .paragraph {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+main-heading {
+    font-size: 3rem;
+    color: #f9f9ff;
+    z-index: 2;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.sub-heading {
+    background-color: #369bff;
+    color: #0e0000;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.paragraph {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-top: 20px;
+    z-index: 2;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

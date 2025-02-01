@@ -1,28 +1,31 @@
 .contact-section {
   display: flex;
-  flex-wrap: wrap; /* Ensure the layout adjusts on smaller screens */
+  flex-wrap: wrap;
   align-items: flex-start;
-  gap: 2rem; /* Reduced gap for better spacing on smaller screens */
+  gap: 2rem;
   margin-top: 150px;
-  padding: 0 20px; /* Add padding for better alignment */
-  justify-content: center; /* Center align content for smaller screens */
+  padding: 0 20px;
+  justify-content: center;
 }
 
 .contact-text {
   max-width: 520px;
   z-index: 2;
   text-shadow: 2px 2px 4px #000000;
-  text-align: center; /* Align text centrally for smaller screens */
+  text-align: center;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 1s, transform 1s;
 }
 
 .contact-text h1 {
-  font-size: 45px; /* Reduced size for better responsiveness */
+  font-size: 45px;
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .contact-text p {
-  font-size: 32px; /* Adjusted for readability */
+  font-size: 32px;
   margin-bottom: 1.5rem;
   line-height: 1.5;
 }
@@ -31,17 +34,20 @@
   position: relative;
   width: 100%;
   max-width: 600px;
-  height: auto; /* Adjust height dynamically based on content */
+  height: auto;
   background: url('submit.jpg') no-repeat center center/cover;
   border-radius: 30px;
   padding: 2rem;
   box-sizing: border-box;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
 }
 
 .form-group {
   display: flex;
-  flex-wrap: wrap; /* Ensure inputs stack on smaller screens */
+  flex-wrap: wrap;
   gap: 1rem;
   margin-bottom: 1rem;
 }
@@ -52,11 +58,11 @@
   border-radius: 30px;
   border: none;
   padding: 0 1rem;
-  font-size: 18px; /* Adjust font size for smaller screens */
+  font-size: 18px;
   background-color: rgba(36, 137, 238, 0.8);
   color: #fff;
   outline: none;
-  width: 100%; /* Full width for smaller screens */
+  width: 100%;
   font-family: 'Itim', cursive;
 }
 
@@ -66,12 +72,12 @@
 
 .form-group.message {
   flex-direction: column;
-  width: 92%; /* Full width for smaller screens */
+  width: 92%;
 }
 
 .form-group.message textarea {
   width: 100%;
-  height: 150px; /* Adjusted height for better proportions */
+  height: 150px;
   border-radius: 30px;
   border: none;
   padding: 1rem;
@@ -88,19 +94,19 @@
 }
 
 .submit-button {
-  width: 160px; /* Slightly larger button */
+  width: 160px;
   height: 50px;
   line-height: 30px;
   text-align: center;
   background-color: #012bff;
   color: #fff;
-  font-size: 18px; /* Adjusted font size */
+  font-size: 18px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  margin: 1rem auto 0; /* Center button on smaller screens */
-  display: block; /* Ensure block-level element */
+  margin: 1rem auto 0;
+  display: block;
   font-family: 'Itim', cursive;
 }
 
@@ -113,7 +119,22 @@
   transform: translateY(0);
 }
 
-/* Responsive Design */
+.submit-button.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+}
+
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 @media (max-width: 768px) {
   .contact-section {
       flex-direction: column;
@@ -135,14 +156,12 @@
   .form-group input,
   .form-group.message textarea {
       font-size: 16px;
-
   }
 
   .submit-button {
       width: 120px;
       height: 40px;
       font-size: 16px;
-      
   }
 }
 
